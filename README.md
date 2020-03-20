@@ -6,7 +6,6 @@
 
 ---
 ## Structure :
-
 1. Home
 2. Front or Back ?
 ⋅⋅* Front End
@@ -24,7 +23,6 @@
 
 ---
 ## Technologies :
-
 We use at the start of the project three web languages to make our website :
 
 * HTML :
@@ -66,7 +64,6 @@ $(function() {
 ```
 ---
 ## Future Developpements :
-
 * Add some content
 
 * Work on the responsive design
@@ -75,7 +72,6 @@ $(function() {
 
 ---
 ## Contributor :
-
 * [Armin](https://github.com/wdwcs)
 * [Baptiste](https://github.com/Astarosa)
 * [Brice](https://github.com/Pakorek)
