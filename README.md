@@ -5,18 +5,18 @@
 ## Structure :
 1. Home
 2. Front or Back ?
-..* Front End
-..* Back End
+   * Front End
+   * Back End
 3. Training
-..* Autodidact
-..* School and university 
-..* Professionnal training
+   * Autodidact
+   * School and university 
+   * Professionnal training
 4. Ressources
-..* Start training
-..* Essential tools
+   * Start training
+   * Essential tools
 5. Infos
-..* About us
-..* Contact
+   * About us
+   * Contact
 ## Technologies :
 We use at the start of the project three web languages to make our website :
 ---
