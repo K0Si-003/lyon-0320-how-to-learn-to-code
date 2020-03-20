@@ -1,10 +1,7 @@
 # How to Learn to Code
----
 ![alt text](https://github.com/K0Si-003/lyon-0320-how-to-learn-to-code/blob/master/img/logo.png "Logo How to Learn to Code")
 
 > Welcome to our project. How to Learn to Code is our first project at the Wild Code School session from march. The project goals is to develop a static website. In this project we choose to help beginners to start learning web developpements.
-
----
 ## Structure :
 1. Home
 2. Front or Back ?
@@ -20,8 +17,6 @@
 5. Infos
 ⋅⋅* About us
 ⋅⋅* Contact
-
----
 ## Technologies :
 We use at the start of the project three web languages to make our website :
 
@@ -62,15 +57,12 @@ $(function() {
 	});
 });
 ```
----
 ## Future Developpements :
 * Add some content
 
 * Work on the responsive design
 
 * Add new features
-
----
 ## Contributor :
 * [Armin](https://github.com/wdwcs)
 * [Baptiste](https://github.com/Astarosa)
