@@ -24,6 +24,14 @@ body {
     padding-top: 40px;
 }
 
+main {
+    height: auto;
+    padding: 20px;
+}
+
+/*///////////////////////////////////////////////////////////////////////
+//////////////////////////////// NAVBAR /////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
 nav {
     position: fixed;
 }
@@ -47,50 +55,10 @@ nav {
     padding: 10px;
 }
 
-main {
-    height: auto;
-    padding: 20px;
-}
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////// HOMEPAGE ////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
 
-/* Texte intro-ressources */
-
-p.intro-ressources {
-    padding: 20px;
-}
-
-/* Modif couleur logo page ressources */
-.fa-html5   {
-    color: #e34f26;
-}
-.fa-css3-alt {
-    color: #264de4;
-}
-.fa-js-square {
-    color: #f0db4f;
-}
-.fa-book-open {
-    color: var(--orange);
-}
-
-
-.fa-connectdevelop {
-    margin: 0 15px;
-}
-
-.navbar.fixed-top.navbar-expand-lg.navbar-light {
-    background: linear-gradient(to right, var(--orange), #ffa400);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
-    font-weight: bold;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
-    padding: 10px;
-}
-
-main {
-    height: auto;
-    padding: 20px;
-}
-
-/* Armin Riri */
 .wrapper {
     width: 400px;
     margin: 0 auto 20px auto;
@@ -117,75 +85,10 @@ main {
     color: #ffa400;
 }
 
-/* Texte et img intro-ressources */
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////// HOWTO ///////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
 
-.intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.intro .img-container {
-    max-width: 650px;
-  }
-.intro img {
-    width: 100%;
-    height: auto;
-}
-p.intro-ressources {
-    padding: 30px;
-}
-
-/* Modif couleur logo page ressources */
-.fa-html5 {
-    color: #e34f26;
-}
-
-.fa-css3-alt {
-    color: #264de4;
-}
-
-.fa-js-square {
-    color: #f0db4f;
-}
-
-.fa-book-open {
-    color: var(--orange);
-}
-
-.fa-tools {
-    color: var(--orange);
-}
-
-form input,
-select,
-textarea {
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 3px;
-    padding: 10px 25px;
-    box-sizing: border-box;
-}
-
-footer {
-    margin-top: auto;
-    background-color: var(--black);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
-    color: white;
-}
-
-footer a, footer p {
-    color: white;
-}
-
-
-footer a:hover {
-    text-decoration: none;
-    color: var(--orange);
-    transition-duration: 0.5s;
-    margin-top: 10px;
-    background-color: var(--black);
-}
-/* ICI ON MET LES CLASS ET ID */
 #accordion-howto {
     display: flex;
     flex-direction: column;
@@ -209,13 +112,51 @@ footer a:hover {
     color: var(--orange);
 }
 
+/*///////////////////////////////////////////////////////////////////////
+///////////////////////////// RESSOURCES ////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
 
+p.intro-ressources {
+    padding: 20px;
+}
 
-/* //////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////// PAKO STYLE MODAFUCKA ///////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////// */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.intro .img-container {
+    max-width: 650px;
+  }
+.intro img {
+    width: 100%;
+    height: auto;
+}
+p.intro-ressources {
+    padding: 30px;
+}
 
+/* Change color of ressources accordions icons */
+.fa-html5   {
+    color: #e34f26;
+}
+.fa-css3-alt {
+    color: #264de4;
+}
+.fa-js-square {
+    color: #f0db4f;
+}
+.fa-book-open {
+    color: var(--orange);
+}
+.fa-tools {
+    color: var(--orange);
+}
 
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////// ROADMAP /////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
 
 #pako_main section:first-of-type, #pako_main > header {
     display: flex;
@@ -224,7 +165,9 @@ footer a:hover {
     align-items: center;    
 }
 
-#pako_main h1 {margin: 50px auto;}
+#pako_main h1 {
+    margin: 50px auto;
+}
 
 .button_pako {
     border: none;
@@ -254,8 +197,6 @@ footer a:hover {
     opacity: 0.6;
     cursor: not-allowed;
 }
-
-/* //////////////////////////////////////////////// ROADMAP ///////////////////////////////// */
 
 #pako_main {
     height: 1960px; 
@@ -453,6 +394,19 @@ footer a:hover {
     to { transform: scale(1);}
 }
 
+/*///////////////////////////////////////////////////////////////////////
+//////////////////////////////// INFOS //////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+form input,
+select,
+textarea {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+
 .infos-section {
     width: 85%;
     margin: 8px auto;
@@ -471,6 +425,10 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+.infos-form label {
+    display: none;
 }
 
 .infos-form input,
@@ -514,29 +472,32 @@ textarea {
 .intro-howto {
     padding: 30px;
 }
-  
-#accordion-howto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////// FOOTER //////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+footer {
+    margin-top: auto;
+    background-color: var(--black);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    color: white;
 }
 
-#accordion-howto h2 {
-    font-size: 1.6em;
+footer a, footer p {
+    color: white;
 }
 
-.btn.btn-link {
-    font-size: 0.7em;
-    font-weight: bold;
+
+footer a:hover {
     text-decoration: none;
-    text-align: center;
-    color: var(--black);
+    color: var(--orange);
+    transition-duration: 0.5s;
+    margin-top: 10px;
+    background-color: var(--black);
 }
 
-.btn.btn-link:hover {
-    color: var(--orange);
-}
+
 
 /* MEDIA QUERIES DESKTOP */
 

@@ -61,16 +61,20 @@
     </section>
     <section>
       <form class="infos-form">
-        <input type="text" placeholder="Nom :" required>
-        <input type="email" placeholder="@ :" required>
-        <select class=infos-select id="infos-motif" required>
+        <label for="name">Votre nom :</label>
+        <input id="name" type="text" placeholder="Nom :" required>
+        <label for="email">Votre email :</label>
+        <input id="email" type="email" placeholder="@ :" required>
+        <label for="ask-select">Votre type de demande :</label>
+        <select id="ask-select" class=infos-select id="infos-motif" required>
             <option value="" disabled selected hidden>Une question/remarque?</option>
             <option value="métier dev.">Plus de renseignements sur le métier de dev.</option>
             <option value="formation">Question sur les formations, les organismes?</option>
             <option value="suggestion">Suggestion concernant le site</option>
             <option value="contact">Entrer en contact avec l'équipe</option>
         </select>
-        <textarea label="Message" placeholder="Message :" rows="5"></textarea>
+        <label for="message">Votre message :</label>
+        <textarea id="message" label="Message" placeholder="Message :" rows="5"></textarea>
         <input type="submit" value="Envoyer !" class="button">
       </form>
     </section>
