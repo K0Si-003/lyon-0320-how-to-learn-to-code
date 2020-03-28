@@ -9,17 +9,17 @@
 //     });
 // });
 
-$(function() {
-	const main = $('#jquery');
-	const ress = $('.modal-footer');
+$(function () {
+  const main = $('#jquery');
+  const ress = $('.modal-footer');
 
-    main.css('display','none');
+  main.css('display', 'none');
 
-	$('.button_pako_front').click(() => {
-		main.fadeIn(1000);
-	});
-	
-	// ress.click( () => {
-	// 	window.onload(ressources.html);
-	// });
+  $('.button_pako_front').click(() => {
+    main.fadeIn(1000);
+  });
+
+  // ress.click( () => {
+  // 	window.onload(ressources.html);
+  // });
 });
