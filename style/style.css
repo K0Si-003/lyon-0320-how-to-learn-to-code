@@ -37,6 +37,37 @@ main {
 ////////////////////////////// DARK MODE ////////////////////////////////
 ///////////////////////////////////////////////////////////////////////*/
 
+.darkmode {
+  border-radius: 5px;
+  border: 2px solid  #404040;
+  width: 40px;
+  height: 40px;
+  color: #404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkmode label {
+  margin: 0;
+}
+
+.darkmode input[type="checkbox"] {
+  display: none;
+}
+
+.darkmode input[type="checkbox"] + label::after {
+  content: "\f185";
+  font-family: FontAwesome;
+  font-size: 1.5em;
+}
+
+.darkmode input[type="checkbox"]:checked + label::after {
+  content: "\f186";
+  font-family: FontAwesome;
+  font-size: 1.5em;
+}
+
 [data-theme="night"] {
   /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
   /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
@@ -548,7 +579,7 @@ footer a:hover {
 }
 
 #myBtn:hover {
-  background-color: #335163;
+  background-color: #C9D2DB;
 }
 
 #myBtn:active {
