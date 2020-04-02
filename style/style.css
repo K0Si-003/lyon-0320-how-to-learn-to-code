@@ -9,6 +9,8 @@ body {
 }
 
 :root {
+    --background-color: white;
+    --text-color: black;
     --primary-color: #ff8300;
     --secondary-color: #343a40;
     --roboto-condensed: 'Roboto Condensed', sans-serif;
@@ -22,11 +24,24 @@ body {
     font-family: var(--roboto);
     background-color: #f0f0f0;
     padding-top: 40px;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 main {
     height: auto;
     padding: 20px;
+}
+
+/*///////////////////////////////////////////////////////////////////////
+////////////////////////////// DARK MODE ////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+[data-theme="night"] {
+  /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+  /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+  --background-color: #404040;
+  --text-color: white;
 }
 
 /*///////////////////////////////////////////////////////////////////////
@@ -141,6 +156,10 @@ nav {
   height: auto;
 }
 
+.card-body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 
 
 /*///////////////////////////////////////////////////////////////////////
