@@ -118,9 +118,9 @@ nav {
 
 .intro-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  /*align-items: center;*/
+  align-items: center;
 }
 
 .intro-container h2 {
@@ -128,6 +128,7 @@ nav {
 }
 
 .intro-container p {
+  max-width: 900px;
   padding: 30px;
 }
 
@@ -510,44 +511,36 @@ footer a:hover {
 ///////////////////////// BACK TO TOP BUTTON ////////////////////////////
 ///////////////////////////////////////////////////////////////////////*/
 
-#button {
-    display: inline-block;
-    background-color: #f3851b;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 4px;
-    margin: 30px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1000;
-    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-    opacity: 0;
-    visibility: hidden;
-  }
-  #button:hover {
-    cursor: pointer;
-    background-color: #335163;
-    border: 2px solid #fff;
-  }
-  #button:active {
-    background-color: #555;
-    border: 2px solid #fff;
-  }
-  #button::after {
-    content: "\f106";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 38px;
-    color: #fff;
-  }
-  #button.show {
-    opacity: 0.8;
-    visibility: visible;
-  }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  outline: none;
+  background-color: #f3851b; /* Set a background color */
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding-top: 4px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+}
+
+#myBtn:hover {
+  background-color: #335163;
+}
+
+#myBtn:active {
+  background-color: #555;
+}
+#myBtn::after {
+  content: "\f106";
+  font-family: FontAwesome;
+  font-size: 2em;
+  line-height: 20px;
+}
 
 /* MEDIA QUERIES DESKTOP */
 
