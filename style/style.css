@@ -113,29 +113,38 @@ nav {
 }
 
 /*///////////////////////////////////////////////////////////////////////
-///////////////////////////// RESSOURCES ////////////////////////////////
+////////////////////////// Howto + Ressources ///////////////////////////
 ///////////////////////////////////////////////////////////////////////*/
 
-p.intro-ressources {
-    padding: 20px;
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*align-items: center;*/
 }
 
-.intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.intro-container h2 {
+  padding: 20px;  
 }
-.intro .img-container {
-    max-width: 650px;
-  }
-.intro img {
-    width: 100%;
-    height: auto;
+
+.intro-container p {
+  padding: 30px;
 }
-p.intro-ressources {
-    padding: 30px;
+
+.intro-container .img-container {
+  max-width: 650px;
 }
+
+.intro-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////
+///////////////////////////// RESSOURCES ////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
 
 /* Change color of ressources accordions icons */
 .fa-html5   {
